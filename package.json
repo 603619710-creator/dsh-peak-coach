@@ -1,0 +1,44 @@
+{
+  "name": "dsh-peak-coach",
+  "version": "1.0.2",
+  "description": "Peak/valley coach mode: during DeepSeek's peak billing hours the agent hands you the plan instead of doing the work, and works normally off-peak.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "peak",
+    "pricing",
+    "off-peak",
+    "cost",
+    "coach"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh-plugin": {
+    "category": "agent",
+    "displayName": "峰谷教练模式"
+  }
+}

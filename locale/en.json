@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Peak/valley coach mode",
+    "description": "During DeepSeek's peak billing hours (weekdays 9:00-12:00 and 14:00-18:00 Beijing time) it blocks only the work nobody asked for: tell it to change a file and it does, while the parts it would add on its own become a plan, commands, and acceptance checks. Off-peak — lunch break, after 18:00, weekends, statutory holidays — it blocks nothing. Reads and searches keep working during peak.",
+    "detail": "docs/DETAIL.md"
+  }
+}

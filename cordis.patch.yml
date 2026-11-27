@@ -1,0 +1,14 @@
+# dsh-peak-coach 的 bundle 层：把它挂进宿主组合。
+# 装 bundle 时 dsh 会把这份 patch 叠在 profile 的补丁栈里。
+#
+# 想改行为就在条目下面加 config（字段见 README）：
+#   config:
+#     peaks: ['09:00-12:00', '14:00-18:00']
+#     holidays: ['2027-01-01']
+#     unlockedMinutes: 10
+- insert:
+    - id: peak-coach
+      name: dsh-peak-coach
+      config:
+        peaks:
+          - '19:00-23:59'
